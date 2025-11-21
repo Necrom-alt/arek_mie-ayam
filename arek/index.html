@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AREK — Are You Arek Jember Enough?</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="app-wrap">
+        <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="sidebar" aria-hidden="false">
+            <div class="sidebar-top">
+                <div class="brand">
+                    <div class="logo" aria-hidden="true">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 6c0 0-6 4-6 10s6 10 6 10 6-4 6-10-6-10-6-10z" fill="url(#shellGrad)"
+                                stroke="currentColor" stroke-width="1.5" />
+                            <defs>
+                                <linearGradient id="shellGrad" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#8EC5FF" />
+                                    <stop offset="100%" stop-color="#3A6EA5" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1>AREK</h1>
+                        <p class="subtitle">Are You Arek Jember Enough?</p>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="nav-wrap" role="navigation">
+                <ul class="menu">
+                    <li data-page="home" class="menu-item active" role="button" tabindex="0">
+                        <span class="icon">🏖️</span>
+                        <span>Beranda</span>
+                    </li>
+                    <li data-page="materi" class="menu-item" role="button" tabindex="0">
+                        <span class="icon">📚</span>
+                        <span>Materi</span>
+                    </li>
+                    <li data-page="quiz" class="menu-item" role="button" tabindex="0">
+                        <span class="icon">🎯</span>
+                        <span>Mini Quiz</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Dark Mode Toggle -->
+            <div class="theme-toggle-wrap">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="5" />
+                        <line x1="12" y1="1" x2="12" y2="3" />
+                        <line x1="12" y1="21" x2="12" y2="23" />
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                        <line x1="1" y1="12" x2="3" y2="12" />
+                        <line x1="21" y1="12" x2="23" y2="12" />
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                </button>
+                <span class="theme-label">Mode Gelap</span>
+            </div>
+
+            <!-- Decorative Wave -->
+            <div class="sidebar-wave" aria-hidden="true">
+                <svg viewBox="0 0 800 200" preserveAspectRatio="none">
+                    <path d="M0 80 Q200 20 400 80 T800 80 L800 200 L0 200 Z" fill="currentColor" opacity="0.08" />
+                    <path d="M0 100 Q200 50 400 100 T800 100 L800 200 L0 200 Z" fill="currentColor" opacity="0.05" />
+                </svg>
+            </div>
+
+            <!-- Tobacco Leaf Pattern -->
+            <div class="tobacco-pattern" aria-hidden="true"></div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main" id="main">
+            <!-- Background Wave Decoration -->
+            <div class="bg-wave-decor" aria-hidden="true">
+                <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice">
+                    <path d="M0 300 Q300 200 600 300 T1200 300 L1200 600 L0 600 Z" fill="currentColor" opacity="0.03" />
+                </svg>
+            </div>
+
+            <div id="content" class="content-area" tabindex="0">
+                <!-- dynamic content injected here by app.js -->
+            </div>
+        </main>
+    </div>
+
+    <!-- scripts: tetap urutan -->
+    <script src="assets/js/materi.js"></script>
+    <script src="assets/js/quiz.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
